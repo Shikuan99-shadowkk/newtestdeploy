@@ -1,0 +1,1 @@
+exec nodemon ./node/server.js "$@"

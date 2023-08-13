@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>echarts</title>
+    <script src="./src/static/js/echarts.js"></script>
+  </head>
+  <body>
+    test
+
+    <script>
+      window.onload = () => {
+        var chartContainer = document.createElement("div");
+        chartContainer.id = "pieChart";
+        chartContainer.style.position = "fixed";
+        chartContainer.style.zIndex = 99999999;
+        chartContainer.style.left = "10px";
+        chartContainer.style.bottom = "10px";
+        chartContainer.style.width = "300px";
+        chartContainer.style.height = "300px";
+        document.body.appendChild(chartContainer);
+        window.console.log(chartContainer);
+        window.console.log(document.body);
+        var chart = echarts.init(chartContainer);
+        var options = {
+          series: [
+            {
+              type: "pie",
+              data: [
+                { value: 335, name: "A" },
+                { value: 310, name: "B" },
+                { value: 234, name: "C" },
+                { value: 135, name: "D" },
+                { value: 1548, name: "E" },
+              ],
+            },
+          ],
+        };
+        chart.setOption(options);
+        window.console.log(echarts);
+      };
+    </script>
+  </body>
+</html>

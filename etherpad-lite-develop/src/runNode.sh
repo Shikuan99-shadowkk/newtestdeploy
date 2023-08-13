@@ -1,0 +1,1 @@
+exec node ./node/server.js "$@"
