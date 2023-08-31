@@ -474,7 +474,7 @@ const pad = {
         var btnlistDom = document.getElementsByClassName("menu_left")[0];
         const liNode = document.createElement("li");
         const aNode = document.createElement("a");
-        aNode.innerHTML = "图表统计";
+        aNode.innerHTML = "effort visiualizer";
         aNode.style.marginLeft = "10px";
         liNode.appendChild(aNode);
         let echartsIsShow = false;
